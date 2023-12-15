@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>FirstPage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="h-20 pt-6 pl-3 bg-black border-b-2 border-white"></div>
+    <div
+      class="flex justify-center items-center h-[45.1em] lg:h-[51em] border-b-2 border-black"
+    >
+      <div class="">
+        <h3 class="text-xl text-center logo lg:text-left lg:text-3xl">
+          Please Select the Room Id
+        </h3>
+        <p class="text-center lg:text-left">
+          Enter a room id to join or create one below.
+        </p>
+        <div class="lg:flex">
+          <div class="flex items-center justify-center p-4 mt-4">
+            <button
+              id="createRoomButton"
+              class="border-2 bg-black p-4 text-white font-semibold rounded-full pl-7 pr-7 cursor-pointer transition-all border-slate-600 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px]"
+            >
+              Create Room
+            </button>
+          </div>
+          <div class="flex items-center justify-center lg:pt-4">
+            <button
+              id="joinRoomButton"
+              class="border-2 bg-black p-4 text-white font-semibold rounded-full pl-9 pr-9 cursor-pointer transition-all border-slate-600 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px]"
+            >
+              Join Room
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="h-20 pt-6 pl-3 bg-black border-b-2 border-white"></div>
+    <script type="module" src="script.js" async defer></script>
+  </body>
+</html>

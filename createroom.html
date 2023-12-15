@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>createroom</title>
+    <meta name="description" content="" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="h-20 pt-6 pl-3 bg-black border-b-2 border-white">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        class="mt-1 cursor-pointer"
+        id="backArrow"
+      >
+        <g fill="none">
+          <path
+            d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"
+          />
+          <path
+            fill="white"
+            d="M3.283 10.94a1.5 1.5 0 0 0 0 2.12l5.656 5.658a1.5 1.5 0 1 0 2.122-2.122L7.965 13.5H19.5a1.5 1.5 0 0 0 0-3H7.965l3.096-3.096a1.5 1.5 0 1 0-2.122-2.121z"
+          />
+        </g>
+      </svg>
+    </div>
+    <div
+      class="flex justify-center items-center h-[45.1em] lg:h-[51em] border-b-2 border-black"
+    >
+      <div>
+        <h3 class="text-2xl text-center logo lg:pl-4 lg:text-left lg:text-3xl">
+          Generate a New Key
+        </h3>
+        <div class="flex">
+          <input
+            type="text"
+            id="keyInput"
+            class="px-4 py-2 mt-4 font-semibold text-center border-2 border-black rounded-lg cursor-text"
+            placeholder="Enter the Key"
+            readonly
+          />
+          <div class="relative pl-3 pt-7">
+            <!-- Circular background -->
+            <div
+              class="absolute flex items-center justify-center w-8 h-8 bg-black rounded-full left-1 top-5"
+              id="svgContainer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 100 100"
+                class="z-[2em] cursor-pointer"
+                id="randomKeyGenerator"
+              >
+                <path
+                  fill="white"
+                  d="M84.539 21.586a1.515 1.515 0 0 0-2.393-1.222l-5.944 4.261l-.468.337c-6.405-6.392-15.196-10.389-24.937-10.389c-19.535 0-35.427 15.894-35.427 35.428s15.893 35.428 35.427 35.428a35.42 35.42 0 0 0 29.374-15.618a1.77 1.77 0 0 0-.475-2.462l-8.863-6.151a1.9 1.9 0 0 0-2.628.512c-3.918 5.792-10.41 9.25-17.375 9.25c-11.558 0-20.962-9.402-20.962-20.957s9.404-20.957 20.962-20.957c4.878 0 9.352 1.696 12.914 4.5l-1.001.72l-5.948 4.26a1.513 1.513 0 0 0 .397 2.656l25.446 8.669c.461.161.966.083 1.368-.203c.399-.29.629-.747.627-1.231z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="relative flex items-center justify-center pl-3 pt-7">
+          <!-- Circular background -->
+          <div
+            class="absolute flex justify-center items-center ml-[8em] w-8 h-8 bg-black rounded-full left-1 top-5"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              class="z-[2em] cursor-pointer"
+            >
+              <path
+                fill="white"
+                d="M16.972 6.251a1.999 1.999 0 0 0-2.72.777l-3.713 6.682l-2.125-2.125a2 2 0 1 0-2.828 2.828l4 4c.378.379.888.587 1.414.587l.277-.02a2 2 0 0 0 1.471-1.009l5-9a2 2 0 0 0-.776-2.72"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="h-20 pt-6 pl-3 bg-black border-b-2 border-white"></div>
+    <script src="script1.js" async defer></script>
+  </body>
+</html>
